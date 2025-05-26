@@ -1,7 +1,8 @@
-# A7B33DIF
+# A7B33DIF_exam
 
-CTU FEE Subject Digital photography processing
+CTU FEE Subject Digital photography processing - solved exam questions
 
+- questions: <https://cw.fel.cvut.cz/wiki/_media/courses/a7b33dif/a7b33dif-collque.pdf>
 - website: <https://cw.fel.cvut.cz/wiki/courses/a7b33dif/>
 
 ## License
