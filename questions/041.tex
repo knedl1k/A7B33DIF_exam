@@ -1,2 +1,16 @@
-\section{Roztřiďte metody předzpracování obrazu do čtyř skupin podle velikosti zpracovávaného okolí právě zpracovávaného 
-pixelu. U každé skupiny uveďte alespoň jeden příklad.}.
+\section{Metody předzpracování obrazu}
+Roztřiďte metody předzpracování obrazu do čtyř skupin podle velikosti zpracovávaného okolí právě zpracovávaného 
+pixelu. U každé skupiny uveďte alespoň jeden příklad.
+\begin{table}[hbt!]
+    \centering
+    \begin{tabular}{|l||l|l|}
+        \hline
+        \bb{Operace} & \bb{Zpracované okolí} & \bb{Příklad}\\\hline
+        Bodové & Jeden konkrétní pixel & Úprava jasu a kontrastu\\\hline
+        Geometrická & Teoreticky pixel, prakticky malé okolí & Rotace, změna měřítka\\\hline
+        Lokální & Malé definované okolí (3x3, 5x5..) & Konvoluční filtrace\\\hline
+        Globální & Celý obraz & filtrace přes Fourierovu transformaci\\
+        \hline
+    \end{tabular}
+    \caption{Skupiny operací}
+\end{table}
