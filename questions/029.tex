@@ -1,3 +1,11 @@
-\section{Zapište vztah pro vyhlazování histogramu \texorpdfstring{$h_i$}{hi}, 
-\texorpdfstring{$i=0,\dots,255$}{i=0,\dots,255} pomocí klouzavého průměru pro okno o šířce \texorpdfstring{$2K+1$}{2K+1} 
-s reprezentativní hodnotou okna uprostřed.}.
+\section{Příklad - vztah pro vyhlazování histogramu}
+Zapište vztah pro vyhlazování histogramu $h_i$, $i=0,\dots,255$ pomocí klouzavého průměru pro okno o šířce $2K+1$ s 
+reprezentativní hodnotou okna uprostřed.
+\begin{align}
+    h^\prime (i) = \frac{1}{2K+1}\sum_{j=i-K}^{i+K}h(j),
+\end{align}
+kde $h^\prime(i)$ je nová, vyhlazená hodnota histogramu v pozici $i$; $h(j)$ jsou původní hodnoty histogramu;
+$2K+1$ je celková šířka symetrického vyhlazovacího okna (např. pro $K=2$ je šířka okna 5).
+
+Operace tedy nahradí každou hodnotu průměrem sebe sama a svých K levých a K pravých sousedů, čímž se potlačí šum a 
+vyhladí lokální extrémy.
