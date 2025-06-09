@@ -1,2 +1,14 @@
-\section{Vysvětlete, co je dvojrozměrná Fourierova transformace, její rozdíl od jednorozměrné (můžete definičním vzorcem 
-nebo neformálně) a jak se používá ve zpracování obrazu.}.
+\section{Dvojrozměrná Fourierova transformace}
+Vysvětlete, co je dvojrozměrná Fourierova transformace, její rozdíl od jednorozměrné (můžete definičním vzorcem 
+nebo neformálně) a jak se používá ve zpracování obrazu.
+
+Dvojrozměrná Fourierova transformace (2D FT) je rozšíření 1D FT pro dvourozměrná data, typicky obrazy. Místo rozkladu 
+signálu na 1D sinusovky rozkládá celý obraz na součet 2D sinusových mřížek (gratings), které mají různou frekvenci 
+(hustotu), amplitudu (kontrast) a orientaci. 
+
+Výsledné 2D frekvenční spektrum je v podstatě \enquote{mapa} frekvencí v obraze. Střed spektra odpovídá nízkým 
+frekvencím (pomalé změny barev, celkové tvary), zatímco body dále od středu reprezentují vysoké frekvence (ostré hrany, 
+detaily, šum).
+
+Hlavní využití 2D FT je pro filtrování obrazu ve frekvenční doméně. Je to často mnohem efektivnější a elegantnější 
+metoda než prostorové konvoluce.
