@@ -1,3 +1,21 @@
-\section{Formulujte Shannonovu (též Nyquistovu, Kotelnikovu) větu o vzorkování pro jednodušší případ jednorozměrného 
+\section{Shannonova věta o vzorkování}
+Formulujte Shannonovu (též Nyquistovu, Kotelnikovu) větu o vzorkování pro jednodušší případ jednorozměrného 
 signálu. Vysvětlete (stačí neformálně, obrázek pomůže), jak se věta o vzorkování dokazuje (nápověda: frekvenční 
-spektra).}.
+spektra).
+
+Shannonova věta o vzorkování říká, že spojitý signál, který neobsahuje žádné frekvence vyšší než $f_{max}$, lze plně 
+zrekonstruovat z jeho diskrétních vzorků, pokud byla vzorkovací frekvence $f_s$ alespoň dvakrát větší než tato maximální 
+frekvence.
+
+Matematicky to vyjadřuje podmínka: 
+\begin{align}
+    f_s > 2 f_{max}
+\end{align}
+Vzorkování signálu v čase způsobí, že se jeho původní frekvenční spektrum začne v doméně frekvencí 
+\bb{periodicky opakovat} s rozestupem rovným vzorkovací frekvenci $f_s$. 
+
+Pokud je podmínka splněna, tyto repliky spektra se nepřekrývají. Původní signál pak lze dokonale obnovit jednoduchým 
+odfiltrováním základního spektra pomocí ideální dolní propusti.
+
+Pokud podmínka splněna není, repliky se překryjí, dojde k nevratnému zkreslení spektra (jev zvaný aliasing) a signál 
+již zrekonstruovat nelze.
