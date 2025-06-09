@@ -1,3 +1,13 @@
-\section{Uvažujte šedotónový obrázek. Ekvalizace histogramu se využívá pro zvýšení kontrastu lepším využitím jasové 
+\section{Použití ekvalizace histogramu na šedotónový obrázek}
+Uvažujte šedotónový obrázek. Ekvalizace histogramu se využívá pro zvýšení kontrastu lepším využitím jasové 
 stupnice. Zvyšuje ekvalizace histogramu množství informace v obrazu, pokud bychom množství informace měřili Shannonovou 
-entropií? Vysvětlete a uveďte příklady.}.
+entropií? Vysvětlete a uveďte příklady.
+
+Ano, prakticky ve všech případech ekvalizace histogramu zvyšuje množství informace v obraze, pokud ji měříme Shannonovou 
+entropií. Důvodem je, že Shannonova entropie je matematicky maximální pro dokonale plochý (uniformní) histogram, kde 
+mají všechny úrovně jasu stejnou pravděpodobnost výskytu. Cílem ekvalizace histogramu je právě transformovat původní, 
+nerovnoměrný histogram tak, aby se tomuto ideálnímu plochému rozložení co nejvíce přiblížil.
+
+Příklad: Vezměme si podexponovaný, nízkokontrastní snímek. Jeho histogram bude úzký a špičatý, soustředěný v tmavých 
+tónech, a bude mít nízkou entropii. Po ekvalizaci se tyto hodnoty \enquote{roztáhnou} přes celý dynamický rozsah, 
+histogram se zploští a jeho entropie se tím zákonitě zvýší.
