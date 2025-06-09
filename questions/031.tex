@@ -1,2 +1,13 @@
-\section{Napište definiční vztah pro přímou a inverzní jednorozměrnou Fourierovu transformaci. Vyjádřete neformálně 
-princip a význam Fourierovy transformace.}.
+\section{Definice přímé a inverzní jednorozměrné Fourierovy transformace}
+Napište definiční vztah pro přímou a inverzní jednorozměrnou Fourierovu transformaci. Vyjádřete neformálně 
+princip a význam Fourierovy transformace.
+\begin{align}
+    F(\xi) &= \int_{-\infty}^{\infty}f(t)e^{-2 \pi \iu \xi t} \dif t \, (\text{Přímá FT})\\
+    f(t) &= \int_{-\infty}^{\infty}F(\xi)e^{2 \pi \iu \xi t} \dif \xi \, (\text{Inverzní FT})
+\end{align}
+Fourierova transformace funguje na principu rozkladu složitého signálu ($f(t)$) na součet jednoduchých sinusových vln o 
+různých frekvencích ($\xi$). Lze si to představit jako hudební sluch, který v komplexním akordu rozpozná jednotlivé 
+tóny.
+
+Význam: Výsledkem transformace je frekvenční spektrum ($F(\xi)$), které nám ukáže, jaké frekvence jsou v původním 
+signálu obsaženy a s jakou intenzitou.
