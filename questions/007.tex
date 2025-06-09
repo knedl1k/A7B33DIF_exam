@@ -1,5 +1,18 @@
-\section{Uvažujte digitalizaci dvojrozměrného obrazu. Zde se stejně jako při digitalizaci jednorozměrného signálu 
+\section{Digitalizace dvojrozměrného obrazu}
+Uvažujte digitalizaci dvojrozměrného obrazu. Zde se stejně jako při digitalizaci jednorozměrného signálu 
 stanovuje vzdálenost ekvidistantních vzorků podle Shannonovy věty o vzorkování. Pro dvojrozměrné obrazy je potřebné 
 navíc ke stanovení vzdálenosti mezi vzorky (což se řeší podobně jako u jednorozměrného signálu) vyřešit další 
 záležitost. Jakou? Jak se záležitost typicky řeší a jaké výhody či nevýhody tato řešení mají? Poznamenávám, že se neptám 
-na kvantování.}.
+na kvantování.
+
+Při digitalizaci dvojrozměrného obrazu je kromě vzdálenosti vzorků nutné vyřešit jejich geometrické uspořádání, tedy 
+zvolit typ vzorkovací mřížky.
+
+Nejčastěji se používá čtvercová mřížka, a to především pro její snadnou technickou realizaci a přímou kompatibilitu s 
+hardwarem (senzory, displeje) i algoritmy (např. Fourierova transformace). Její klíčovou nevýhodou je však 
+nejednoznačnost při měření vzdáleností a sousednosti, protože diagonální soused pixelu je dál než jeho přímý soused 
+(tzv. problém metriky).
+
+Teoreticky výhodnější hexagonální mřížka tento problém řeší, jelikož v ní má každý pixel všechny sousedy ve stejné 
+vzdálenosti. V praxi se ovšem téměř nevyužívá kvůli nedostatku hardwarové podpory a větší složitosti při implementaci 
+standardních operací.

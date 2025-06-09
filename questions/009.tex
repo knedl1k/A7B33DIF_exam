@@ -1,3 +1,14 @@
-\section{Napište definiční vzorec Shannonovy (též informační) entropie. Vysvětlete veličiny ve vzorci. K čemu se 
+\section{Shannonova (též informační) entropie}
+Napište definiční vzorec Shannonovy (též informační) entropie. Vysvětlete veličiny ve vzorci. K čemu se 
 Shannonova entropie používá? Uvažujte šedotónový obraz. Uveďte alespoň dvě použití Shannonovy entropie v digitálním 
-zpracování obrazu.}.
+zpracování obrazu.
+
+Shannonova entropie kvantifikuje průměrnou informační hodnotu, nejistotu nebo složitost dat, jako je například obraz. 
+V digitálním zpracování obrazu se používá především k hodnocení obsahu obrazu a jako teoretický základ pro kompresi dat.
+\begin{align}
+    H = - \sum_{i=0}^{N-1}p_i \log_2 (p_i),
+\end{align}
+kde $p_i$ je pravděpodobnost výskytu $i$-té úrovně šedi v obraze a $N$ je celkový počet úrovní šedi (typicky 256). 
+Entropie $H$ je vyjádřena v \textbf{bitech na pixel} a měří průměrné množství informace, které nese jeden pixel. Vysoká
+hodnota entropie znamená, že obraz je vizuálně složitý, obsahuje mnoho detailů a jeho úrovně šedi jsou rozloženy 
+rovnoměrně, nízká entropie může znamet třeba i opakující se vzory.
