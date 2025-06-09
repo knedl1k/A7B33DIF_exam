@@ -1,9 +1,13 @@
-\section{Na obrázku je výřez obrazové funkce. Tučně je ohraničeno okolí, ve kterém se má vypočítat filtrovaná hodnota, 
-tj. filtrační maska. Vypočtěte filtrované hodnoty (a) při vyhlazování obyčejným průměrováním a (b) mediánovou filtrací 
-pro právě zpracovávaný pixel ležící ve středu filtrační masky.}.
+\section{Příklad filtrační maska}
+Na obrázku je výřez obrazové funkce. Tučně je ohraničeno okolí, ve kterém se má vypočítat filtrovaná hodnota, 
+tj. filtrační maska. Vypočtěte filtrované hodnoty při vyhlazování
+\begin{enumerate}[(a)]
+    \item obyčejným průměrováním,
+    \item mediánovou filtrací
+\end{enumerate}  
+pro právě zpracovávaný pixel ležící ve středu filtrační masky.
 
-
-\begin{figure}
+\begin{figure}[H]
     \centering
     \begin{tikzpicture}[
         cell/.style={
@@ -36,5 +40,6 @@ pro právě zpracovávaný pixel ležící ve středu filtrační masky.}.
         (4,1) -- (3,1) -- (3,0) -- (2,0) -- (2,1) -- (1,1) --  (1,2) -- (0,2) -- (0,3) -- (1,3) -- 
         (1,4) -- (2,4) -- cycle;
 
-    \end{tikzpicture} 
+    \end{tikzpicture}
+    \caption{Výřez obrazové funkce}
 \end{figure}
