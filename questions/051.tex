@@ -1,4 +1,13 @@
-\section{Uvažujte filtraci náhodného aditivního šumu v obraze. Odhad správné hodnoty se může počítat jako aritmetický 
-průměr \texorpdfstring{$n$}{n} zašuměných hodnot. Kolikrát se po filtraci zmenší hodnota šumu vyjádřená směrodatnou 
-odchylkou \texorpdfstring{$\sigma$}{σ}? Vysvětlete, jaký je statistický princip poklesu šumu (nápověda: centrální 
-limitní věta).}.
+\section{Filtrace náhodného aditivního šumu v obraze}
+Uvažujte filtraci náhodného aditivního šumu v obraze. Odhad správné hodnoty se může počítat jako aritmetický průměr $n$ 
+zašuměných hodnot. Kolikrát se po filtraci zmenší hodnota šumu vyjádřená směrodatnou odchylkou $\sigma$? Vysvětlete, 
+jaký je statistický princip poklesu šumu (nápověda: centrální limitní věta).
+
+Při zprůměrování $n$ nezávislých zašumělých hodnot se směrodatná odchyulka šumu $\sigma$ zmenší $\sqrt{n}$-krát.
+
+Statistický princip tohoto jevu vychází z pravidel pro práci s náhodnými veličinami a je úzce spjat s \bb{Centrální 
+limitní větou}. Když sčítáme nezávislé náhodné veličiny (jednotlivé hodnoty šumu), jejich \bb{rozptyly} (variance) se 
+sčítají, nikoli směrodatné odchylky. Rozptyl průměru z $n$ měření je tedy $n$-krát menší než rozptyl jednoho měření. 
+Vzhledem k tomu, že směrodatná odchylka je odmocnina z rozptylu, její pokles je $\sqrt{n}$. Průměrováním se tak náhodné 
+kladné a záporné odchylky šumu efektivně \enquote{vyruší} a odhadovaná hodnota se stále více blíží skutečné, nezašuměné 
+hodnotě signálu.
