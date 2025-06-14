@@ -1,2 +1,11 @@
-\section{Pro odstranění redundance při kódování v kompresi dat se používá Huffmanovo kódování. Uveďte jeho myšlenku. Je 
-Huffmanovo kódování optimální? Za jakých podmínek? K čemu se používá?}.
+\section{Huffmanovo kódování}
+Pro odstranění redundance při kódování v kompresi dat se používá Huffmanovo kódování. Uveďte jeho myšlenku. Je 
+Huffmanovo kódování optimální? Za jakých podmínek? K čemu se používá?
+
+Hlavní myšlenkou Huffmanova kódování je přiřadit častěji se vyskytujícím symbolům kratší kódová slova a méně častým 
+symbolům delší kódová slova. Tím se celková délka zakódovaných dat v průměru zmenší.
+
+Ano, Huffmanovo kódování je optimální za podmínky, že se kóduje každý symbol samostatně a jeho pravděpodobnost výskytu 
+je předem známá.
+
+Používá se pro bezeztrátovou kompresi, obvykle jako poslední krok třeba v \bb{zip}, \bb{jpeg}, \bb{mp3}.
