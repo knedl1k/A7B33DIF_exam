@@ -1,2 +1,15 @@
-\section{Formulujte úlohu segmentace obrazu (vstup, výstup, co má udělat?). Napište, na co se segmentace používá při 
-zpracování digitálních fotografií.}.
+\section{Úloha segmentace obrazu}
+Formulujte úlohu segmentace obrazu (vstup, výstup, co má udělat?). Napište, na co se segmentace používá při 
+zpracování digitálních fotografií.
+
+Segmentace obrazu je proces, který rozděluje digitální obraz na několik smysluplných, nepřekrývajících se oblastí neboli 
+segmentů. Cílem je zjednodušit obraz a seskupit pixely, které k sobě patří, aby bylo možné dále analyzovat jen konkrétní 
+objekty.
+\begin{itemize}
+    \item \bb{Vstup}: digitální obraz
+    \item \bb{Cíl}: Najít a ohraničit souvislé oblasti v obraze. Pixely uvnitř jednoho segmentu by si měly být co 
+    nejvíce podobné (např. barvou, texturou), zatímco sousední segmenty by se měly co nejvíce lišit.
+    \item \bb{Výstup}: Maska nebo mapa segmentů. Je to obraz stejné velikosti jako vstup, kde hodnota každého pixelu 
+    neudává barvu, ale identifikační číslo segmentu, do kterého patří.
+\end{itemize}
+Využívá se třeba na výběr objektů pomocí \enquote{kouzelné hůlky}, rozmazání pozadí...
