@@ -1,6 +1,15 @@
 \section{Komprese JPEG a blokovací efekt}
-\begin{enumerate}
+\begin{enumerate}[a)]
     \item Vysvětlete princip dnes hojně používané ztrátové metody komprese obrazu podle standardu JPEG? 
     \item Při velkých kompresních poměrech jsou ve výsledku patrné čtverečky rozměru $8 \times 8$. Čím je tento tzv. 
     blokovací efekt způsoben? Proč se k takovému řešení přistoupilo?
-\end{enumerate}.
+\end{enumerate}
+a) Komprese JPEG funguje tak, že obraz nejprve rozdělí na malé bloky o velikosti $8 \times 8$ pixelů. V každém bloku 
+převede obrazová data na soubor frekvencí. Klíčovým krokem je kvantizace, při které se s velkou přesností zachovají jen 
+důležité (nízké) frekvence představující hrubé tvary a barvy, zatímco méně důležité (vysoké) frekvence popisující jemné 
+detaily jsou zahozeny nebo silně zjednodušeny. Právě v tomto kroku dochází ke ztrátě dat, ale zároveň k výraznému 
+zmenšení velikosti souboru.
+
+b) Blokovací efekt je způsoben tím, že každý blok $8 \times 8$ pixelů je komprimován zcela samostatně, bez ohledu na své 
+okolí. Protože sousední bloky o sobě \enquote{neví}, vznikají na jejich hranicích viditelné, ostré přechody, které tvoří 
+onu typickou čtvercovou síť. Přistoupilo se na to z výpočetních důvodů.
