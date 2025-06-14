@@ -1,2 +1,10 @@
-\section{Vysvětlete princip ztrátové komprese obrázků pomocí lineárních integrálních transformací. Vyjmenujte dvě takové 
-metody a naznačte jejich princip. Proč se pro obrazy používají jiné metody komprese než pro posloupnosti?}.
+\section{Princip ztrátové komprese obrázku pomocí lineárních integrálních transformací}
+Vysvětlete princip ztrátové komprese obrázků pomocí lineárních integrálních transformací. Vyjmenujte dvě takové 
+metody a naznačte jejich princip. Proč se pro obrazy používají jiné metody komprese než pro posloupnosti?
+
+\begin{enumerate}[a)]
+    \item Diskrétní kosinová transformace - Obraz se nejprve rozdělí na malé bloky (typicky $8 \times 8$ pixelů) a na 
+    každý z nich se samostatně aplikuje DCT.
+    \item Vlnková transformace - Na rozdíl od DCT, která pracuje s pevnými bloky, vlnková transformace analyzuje celý 
+    obraz najednou v různých úrovních rozlišení.
+\end{enumerate}

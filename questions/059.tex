@@ -1,2 +1,10 @@
-\section{Jakou výhodu přináší určování polohy hrany jako průchodu druhé derivace obrazové funkce nulovou hladinou? 
-Napište, v jakých hranových detektorech se této výhody využívá a jak.}.
+\section{Určování polohy hrany jako průchod druhé derivace obrazové funkce}
+Jakou výhodu přináší určování polohy hrany jako průchodu druhé derivace obrazové funkce nulovou hladinou? 
+Napište, v jakých hranových detektorech se této výhody využívá a jak.
+
+Určování polohy hrany pomocí průchodu druhé derivace nulou umožňuje její velmi přesnou lokalizaci na šířku jediného 
+pixelu. Tato metoda je robustnější vůči šumu a poskytuje uzavřené hrany, což je výhodné pro další zpracování obrazu.
+
+Této výhody využívá především Marr-Hildrethův detektor hran. Ten nejprve aplikuje na obraz filtr známý jako Laplacián 
+Gaussovy funkce (LoG), čímž dojde k vyhlazení a zároveň výpočtu druhé derivace. V takto zpracovaném obraze jsou pak 
+hrany detekovány právě v místech, kde funkční hodnoty procházejí nulou.
