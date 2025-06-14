@@ -1,4 +1,15 @@
 \section{I když nic nevíme o interpretaci obrazových dat, můžeme měřit informační obsah obrazu Shannonovou entropií. 
-Uvažujte šedotónový obraz. Ukažte, jak spočítat entropii jasových úrovní obrazy se 2b stupni šedi obrazu o rozměru 
+Uvažujte šedotónový obraz. Ukažte, jak spočítat entropii jasových úrovní obrazy se $2^b$ stupni šedi obrazu o rozměru 
 \texorpdfstring{$N \times N$}{N x N} histogramu \texorpdfstring{$h(i)$}{h(i)}, 
-\texorpdfstring{$i=0,\dots,2b-1$}{i=0,\dots,2b-1}. Pro jaký histogram bude entropie největší?}.
+\texorpdfstring{$i=0,\dots,2^b-1$}{i=0,\dots,2^b-1}. Pro jaký histogram bude entropie největší?}.
+\begin{align}
+  \hat P(i) &= \frac{h(i)}{N\cdot N} \\
+  \hat H &= - \sum_i^{2^b-1}\hat P(i)\log_2\hat P(i)
+\end{align}
+, kde $\hat P(i)$ je odhad pravděpodobnosti $i$-té hodnoty v $N\times N$ rozměrném obraz, $\hat H$ je pak odhad entropie obrazu s $2^b$ jasovými úrovněmi%
+\footnote{tento odhad je optimistický, jelikož existuje statistická závislost mezi jasy jednotlivých pixelů v normálním obrazu}.
+\begin{itemize}
+  \item{Pro jaký histogram bude entropie větší?\\}
+    Pro hystogram co má pod sebou větší plochu%
+    \footnote{nejsem si s tímhle jist, v přednášce o kompresi obrazů jsou dva obrázky sirek s jejich histogramy, a autokorelačními funkcemi, s tím že ten který má histogram s menší plochou, má také vyšší hodnoty v autokorelační funkci, značící jakousi periodičnost, a podle tohoto usuzuji, také by mi to \enquote{intuitivně} dávalo smysl.}.
+\end{itemize}
